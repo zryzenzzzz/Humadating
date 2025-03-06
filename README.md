@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,7 +34,7 @@
             font-weight: 700;
             font-size: 48px;
             margin-bottom: 20px;
-            letter-spacing: -5px; /* Keeps the tight spacing for "Huma" */
+            letter-spacing: 2px; /* Spreads out the letters (positive value) instead of -5px */
         }
 
         .content {
@@ -100,7 +99,7 @@
 
         .form-section {
             width: 100%;
-            max-width: 500px;
+            max-width: 700px; /* Increased from 500px to make the form box longer (wider) */
         }
 
         /* Uiverse.io Form Styles */
@@ -142,6 +141,7 @@
             color: rgb(255, 255, 255);
             border: 2px solid #999999;
             box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            width: 100%; /* Ensures inputs stretch to full width of form */
         }
 
         .input::placeholder {
@@ -170,6 +170,7 @@
             transform: rotateX(-10deg);
             transition: all 0.3s ease-in-out;
             box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            width: 100%; /* Ensures button stretches to full width of form */
         }
 
         button:not(.instagram-btn):hover {
